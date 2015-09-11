@@ -1,3 +1,5 @@
+ifneq ($(MRVL_WIRELESS_DAEMON_API),)
+
 LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
@@ -50,3 +52,4 @@ ALL_MODULES.$(LOCAL_MODULE).INSTALLED := \
     $(ALL_MODULES.$(LOCAL_MODULE).INSTALLED) $(SYMLINKS)
 endif
 include $(BUILD_EXECUTABLE)
+endif
